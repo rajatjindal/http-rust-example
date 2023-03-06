@@ -14,12 +14,3 @@ key_value_stores = ["default"]
 route = "/..."
 [component.build]
 command = "cargo build --target wasm32-wasi --release"
-
-# Spin KV explorer component
-[[component]]
-source = { url = "https://github.com/radu-matei/spin-kv-explorer/releases/download/v0.5.0/spin-kv-explorer.wasm", digest = "sha256:d5f9e1f6b61b90f7404e3800285f7860fe2cfc7d0116023efc370adbb403fe87" }
-id = "kv-explorer"
-# add or remove stores you want to explore here
-key_value_stores = ["default"]
-[component.trigger]
-route = "/internal/kv-explorer/..."

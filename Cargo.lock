@@ -248,7 +248,7 @@ dependencies = [
  "bytes",
  "http",
  "spin-analytics",
- "spin-sdk 0.9.0",
+ "spin-sdk",
  "wit-bindgen-rust",
 ]
 
@@ -425,18 +425,20 @@ dependencies = [
 [[package]]
 name = "spin-analytics"
 version = "0.1.0"
+source = "git+https://github.com/rajatjindal/spin-analytics?branch=main#1b1cbb727cee3ab07c825d108fa88bfb5c895189"
 dependencies = [
  "anyhow",
  "chrono",
  "derive_builder",
  "serde_json",
  "spin-analytics-macro",
- "spin-sdk 0.10.0",
+ "spin-sdk",
 ]
 
 [[package]]
 name = "spin-analytics-macro"
 version = "0.1.0"
+source = "git+https://github.com/rajatjindal/spin-analytics?branch=main#1b1cbb727cee3ab07c825d108fa88bfb5c895189"
 dependencies = [
  "quote",
  "syn",
@@ -455,36 +457,6 @@ dependencies = [
  "syn",
  "wit-bindgen-gen-core",
  "wit-bindgen-gen-rust-wasm",
- "wit-bindgen-rust",
-]
-
-[[package]]
-name = "spin-macro"
-version = "0.1.0"
-source = "git+https://github.com/fermyon/spin?tag=v0.9.0#a99ed5130d46c541d5ae0020a09d0dec51be2b0a"
-dependencies = [
- "anyhow",
- "bytes",
- "http",
- "proc-macro2",
- "quote",
- "syn",
- "wit-bindgen-gen-core",
- "wit-bindgen-gen-rust-wasm",
- "wit-bindgen-rust",
-]
-
-[[package]]
-name = "spin-sdk"
-version = "0.9.0"
-source = "git+https://github.com/fermyon/spin?tag=v0.9.0#a99ed5130d46c541d5ae0020a09d0dec51be2b0a"
-dependencies = [
- "anyhow",
- "bytes",
- "form_urlencoded",
- "http",
- "spin-macro 0.1.0 (git+https://github.com/fermyon/spin?tag=v0.9.0)",
- "thiserror",
  "wit-bindgen-rust",
 ]
 
@@ -497,7 +469,7 @@ dependencies = [
  "bytes",
  "form_urlencoded",
  "http",
- "spin-macro 0.1.0 (git+https://github.com/fermyon/spin?tag=v0.10.0)",
+ "spin-macro",
  "thiserror",
  "wit-bindgen-rust",
 ]
